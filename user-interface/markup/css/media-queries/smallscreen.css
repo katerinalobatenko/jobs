@@ -1,0 +1,75 @@
+@media all
+and (max-width: 1365px){
+    body {
+        width: 100%;
+    }
+
+    #wrapper #header #nav ul li a#profiler-nav,
+    #wrapper #header #nav ul li a#chat-nav,
+    #wrapper #header #nav ul li a#kpi-nav,
+    #wrapper #header #nav ul li a#stormfall-nav,
+    #wrapper #header #nav ul li a#discount-nav
+    {
+        display: none;
+    }
+
+    #wrapper #main #content-holder .article #content ul li div .message {
+        display: inline-block;
+        padding-top: 5px;
+    }
+
+    #wrapper #main #content-holder .article {
+        height: 91%;
+    }
+
+    #wrapper #main #content-holder .article #content ul li div {
+        padding-bottom: 0;
+    }
+
+    #wrapper #header #nav .indent {
+        margin-left: 15px;
+    }
+
+    #wrapper #header #nav #id-user-nav {
+        width: 90px;
+        padding-left: 5px;
+    }
+
+    select#room-type {
+        width: 75px;
+        padding-left: 0;
+    }
+
+    #wrapper #main #sidebar #title {
+        width: 42%;
+    }
+
+    #wrapper #main #sidebar form button.ui-multiselect.ui-widget.ui-state-default.ui-corner-all {
+        width: 140px !important;
+    }
+
+    #wrapper #main #sidebar #form label {
+         display: none;
+    }
+
+    #wrapper #main #sidebar select {
+        margin: 0;
+        width: 65px;
+    }
+
+    #wrapper #main #sidebar #form input[type="search"] {
+        margin: 0;
+        width: 120px;
+    }
+
+    #wrapper #main #content-holder .article #message-box {
+        width: auto;
+        left: 427px;
+        right: 24px;
+    }
+
+    #wrapper #main #content-holder .article #message-box #user-message {
+        width: 73%;
+    }
+}
+

@@ -1,0 +1,25 @@
+@media all and (min-width: 1600px) {
+    body {
+        width: 100%;
+    }
+
+    #wrapper #header #nav ul li a {
+        padding: 0 25px;
+    }
+
+    #wrapper #header #nav ul li:nth-of-type(1) a.triangle::after {
+        left: 154px;
+    }
+
+    #wrapper #main #content-holder .article {
+        height: 94.5%;
+    }
+
+    #wrapper #header #nav #id-user-nav {
+        right: 130px;
+    }
+
+    #wrapper #main #content-holder .article #message-box #user-message {
+        width: 88%;
+    }
+}

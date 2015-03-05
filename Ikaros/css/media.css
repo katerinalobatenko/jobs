@@ -1,0 +1,59 @@
+@media screen and (min-width: 1400px) {
+  body {
+    font-size: 80%; }
+  .page-width {
+    margin: 0 auto; }
+  .carousel-holder {
+    width: 1200px;
+    height: 562.5px; }
+  .carousel img {
+    width: 1200px; }
+  .content-block .gallery li {
+    margin-bottom: 2%; } }
+
+@media screen and (min-width: 1280px) and (max-width: 1399px) {
+  body {
+    font-size: 73%; }
+  .carousel-holder {
+    width: 1024px;
+    height: 480px; }
+  .carousel img {
+    width: 1024px; } }
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .carousel-holder {
+    width: 900px;
+    height: 421.875px; }
+  .carousel img {
+    width: 900px; } }
+
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+  body {
+    font-size: 62.5%; }
+  .carousel-holder {
+    width: 800px;
+    height: 375px; }
+  .carousel img {
+    width: 800px; }
+  .tabset a {
+    font-size: 1.5em; } }
+
+@media screen and (min-width: 768px) and (max-width: 899px) {
+  body {
+    font-size: 59%; }
+  .page-width {
+    margin: 0 3em; }
+  .carousel-holder {
+    width: 700px;
+    height: 328.125px; }
+  .carousel img {
+    width: 700px; }
+  .tabset a {
+    font-size: 1.5em; }
+  .post {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    font-size: 1.1em; }
+  .meta {
+    font-size: 1.3em; } }

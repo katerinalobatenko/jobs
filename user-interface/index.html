@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>User interface</title>
+    <link media="all" rel="stylesheet" href="markup/css/reset.css">
+    <link media="all" rel="stylesheet" href="markup/css/style.css">
+    <link media="all" rel="stylesheet" href="markup/css/jquery-ui.css">
+    <link media="all" rel="stylesheet" href="markup/css/jquery.multiselect.css">
+    <link media="all" rel="stylesheet" href="markup/css/media-queries/smallscreen.css">
+    <link media="all" rel="stylesheet" href="markup/css/media-queries/widescreen.css">
+    <link media="all" rel="stylesheet" href="markup/css/media-queries/very-widescreen.css">
+    <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="markup/css/ie-style.css"/><![endif]-->
+</head>
+<body>
+<div id="wrapper">
+    <header id="header">
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html" class="triangle" id="administration-nav">Administration</a></li>
+                <li><a href="#" class="caret indent" id="user-nav">User</a></li>
+                <li><a href="#" class="caret" id="locations-nav">Locations</a></li>
+                <li><a href="#" class="caret" id="notification-nav">Notification</a></li>
+                <li><a href="#" id="profiler-nav">Profiler</a></li>
+                <li><a href="#" class="caret" id="news-nav">News</a></li>
+                <li><a href="#" class="caret" id="tools-nav">Tools</a></li>
+                <li><a href="#" class="caret" id="globalevents-nav">Global events</a>
+
+                    <div>
+                        <ul>
+                            <li><a href="#" id="gl-events-nav">Global events</a></li>
+                            <li><a href="#" id="imp-gl-nav">Import global events</a></li>
+                            <li><a href="#" id="gl-stat-nav">Global events statistics</a></li>
+                            <li><a href="#" id="gl-evjson-nav">Global events json</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href='#' class='caret' id='others-nav'>Others</a>
+
+                    <div id='div-others-nav'>
+                        <ul>
+                            <li><a href='#' id='profiler1-nav'>Profiler</a></li>
+                            <li><a href='#' id='kpi1-nav'>KPI</a></li>
+                            <li><a href='#' id='chat1-nav'>Chat</a>
+                            <li><a href='#' id='discount1-nav'>Discount Offers</a></li>
+                            <li><a href='#' id='stormfall1-nav'>Stormfall Ratings</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#" id="kpi-nav">KPI</a></li>
+                <li><a href="#" id="chat-nav">Chat</a></li>
+                <li><a href="#" class="caret" id="discount-nav">Discount Offers</a></li>
+                <li><a href="#" id="stormfall-nav">Stormfall Ratings</a></li>
+                <li><a href="#" id="id-user-nav">dm_gri</a></li>
+                <li><a href="#" id="login-nav">Sign out</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="main">
+        <aside id="sidebar" class="gradient">
+            <span id="title">Game Web Chat</span>
+            <span id="id-room">Room m-65</span>
+
+            <form id="form" accept-charset="UTF-8">
+                <label for="room-type">Room type</label>
+                <select id="room-type" name="room-type">
+                    <option value="1"> Public</option>
+                    <option value="2"> Private</option>
+                    <option value="3"> Conference hall</option>
+                </select>
+                <label for="application">Application</label>
+                <select id="application" name="application">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+                <input type="search" name="search" placeholder="Search"/>
+
+                <div class="dropdown">
+                    <input id="dropdown" name="dropdown" type="button" value="Clan search"/>
+                    <span class="image"></span>
+                </div>
+                <div id="form-clans">
+                    <div class="field">
+                        <label for="clanname">Clan name:</label>
+                        <input type="text" id="clanname" name="clanname" placeholder="Clan name"/></div>
+                    <div class="field">
+                        <label for="xlead">Clan Lead:</label>
+                        <input type="text" id="xlead" name="xlead" placeholder="X"/>
+                        <label for="ylead"></label>
+                        <input type="text" id="ylead" name="ylead" placeholder="Y"/>
+                    </div>
+                </div>
+            </form>
+
+        </aside>
+        <div id="content-holder">
+            <aside id="left-bar">
+                <ul>
+                    <li><a href="#">Global Room (462)</a></li>
+                    <li><a href="#">Room m-33 (5)</a></li>
+                    <li><a href="#" class="active">Room m-65</a></li>
+                    <li><a href="#">Room m-36 (8)</a></li>
+                    <li><a href="#">Room m-40 (6)</a></li>
+                    <li><a href="#">Room m-44 (1)</a></li>
+                    <li><a href="#">Room m-45 (1)</a></li>
+                    <li><a href="#">Room m-46 (5)</a></li>
+                    <li><a href="#">Room m-47 (4)</a></li>
+                    <li><a href="#">Room m-48 (4)</a></li>
+                    <li><a href="#">Room m-49 (1)</a></li>
+                    <li><a href="#">Room m-50</a></li>
+                    <li><a href="#">Room m-53 (5)</a></li>
+                    <li><a href="#">Room m-54 (1)</a></li>
+                    <li><a href="#">Room m-55 (1)</a></li>
+                    <li><a href="#">Room m-56 (7)</a></li>
+                    <li><a href="#">Room m-59 (6)</a></li>
+                    <li><a href="#">Room m-60 (2)</a></li>
+                    <li><a href="#">Room m-61 (4)</a></li>
+                    <li><a href="#">Room m-62 (2)</a></li>
+                    <li><a href="#">Room m-63 (1)</a></li>
+                    <li><a href="#">Room m-64 (10)</a></li>
+                    <li><a href="#">Room m-34 (1)</a></li>
+                    <li><a href="#">Room m-66 (1)</a></li>
+                    <li><a href="#">Room m-67 (3)</a></li>
+                </ul>
+            </aside>
+            <div class="article">
+                <section id="content">
+
+                    <ul class="user-menu" id="user-menu-id">
+                        <li>User</li>
+                        <li>Ban</li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div>
+                                <time>23:41:15</time>
+                                <a class="toggle-link user gollum">GOLLUM</a>
+
+                                <p class="message">PBR polaroid</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:41:16</time>
+                                <a class="toggle-link user azog">AZOG</a>
+
+                                <p class="message">polaroid</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:41:18</time>
+                                <a class="toggle-link user smaug">SMAUG</a>
+
+                                <p class="message">PBR</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:42:00</time>
+                                <a class="toggle-link user legolas">LEGOLAS</a>
+
+                                <p class="message">Lora ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                                    vel.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:42:10</time>
+                                <a class="toggle-link user mary">Mary</a>
+
+                                <p class="message">Where is PBR polaroid?</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:43:05</time>
+                                <a class="toggle-link user bolg">BOLG</a>
+
+                                <p class="message">Lora ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac
+                                    nisi
+                                    elit. Nam ac accumsan.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:43:16</time>
+                                <a class="toggle-link user isoiso">ISOISO</a>
+
+                                <p class="message">polaroid</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:43:28</time>
+                                <a class="toggle-link user azog">AZOG</a>
+
+                                <p class="message">PBR</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:44:02</time>
+                                <a class="toggle-link ser ardoof">Ardoof</a>
+
+                                <p class="message">Lora ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                                    vel.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:44:15</time>
+                                <a class="toggle-link user isoiso">ISOISO</a>
+
+                                <p class="message">Where is PBR polaroid?</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:44:55</time>
+                                <a class="toggle-link user sauron">SAURON</a>
+
+                                <p class="message">PBR polaroid?</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:46:16</time>
+                                <a class="toggle-link user ugluk">UGLUK</a>
+
+                                <p class="message">polaroid</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:47:18</time>
+                                <a class="toggle-link user isoiso">ISOISO</a>
+
+                                <p class="message">PBR</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:48:00</time>
+                                <a class="toggle-link user ardoof">Ardoof</a>
+
+                                <p class="message">Lora ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                                    vel.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:49:15</time>
+                                <a class="toggle-link user isoiso">ISOISO</a>
+
+                                <p class="message">Where is PBR polaroid?</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:50:15</time>
+                                <a class="toggle-link user isoiso">ISOISO</a>
+
+                                <p class="message">PBR polaroid</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:51:16</time>
+                                <a class="toggle-link user isoiso">ISOISO</a>
+
+                                <p class="message">polaroid</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:51:18</time>
+                                <a class="toggle-link user isoiso">ISOISO</a>
+
+                                <p class="message">PBR</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:52:00</time>
+                                <a class="toggle-link user ardoof">Ardoof</a>
+
+                                <p class="message">Lora ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                                    vel.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:53:15</time>
+                                <a class="toggle-link user gendalf">GENDALF</a>
+
+                                <p class="message">Neque porro quisquam est qui dolora ipsum quia dolor sit amet,
+                                    consectetur,
+                                    adipisci velit</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:53:16</time>
+                                <a class="toggle-link user gendalf">GENDALF</a>
+
+                                <p class="message">PBR polaroid</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:54:16</time>
+                                <a class="toggle-link user isoiso">ISOISO</a>
+
+                                <p class="message">polaroid</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:55:18</time>
+                                <a class="toggle-link user isoiso">ISOISO</a>
+
+                                <p class="message">PBR</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:56:20</time>
+                                <a class="toggle-link user ardoof">Ardoof</a>
+
+                                <p class="message">Lora ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                                    vel.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:57:15</time>
+                                <a class="toggle-link user isoiso">ISOISO</a>
+
+                                <p class="message">Where is PBR polaroid?</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:48:00</time>
+                                <a class="toggle-link user ardoof">Ardoof</a>
+
+                                <p class="message">Lora ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                                    vel.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:49:15</time>
+                                <a class="toggle-link user isoiso">ISOISO</a>
+
+                                <p class="message">Where is PBR polaroid?</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:50:15</time>
+                                <a class="toggle-link user isoiso">ISOISO</a>
+
+                                <p class="message">PBR polaroid</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:51:16</time>
+                                <a class="toggle-link user isoiso">ISOISO</a>
+
+                                <p class="message">polaroid</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:51:18</time>
+                                <a class="toggle-link user isoiso">ISOISO</a>
+
+                                <p class="message">PBR</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:52:00</time>
+                                <a class="toggle-link user ardoof">Ardoof</a>
+
+                                <p class="message">Lora ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                                    vel.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:53:15</time>
+                                <a class="toggle-link user gendalf">GENDALF</a>
+
+                                <p class="message">Neque porro quisquam est qui dolora ipsum quia dolor sit amet,
+                                    consectetur,
+                                    adipisci velit</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:53:16</time>
+                                <a class="toggle-link user gendalf">GENDALF</a>
+
+                                <p class="message">PBR polaroid</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:54:16</time>
+                                <a class="toggle-link user isoiso">ISOISO</a>
+
+                                <p class="message">polaroid</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:55:18</time>
+                                <a class="toggle-link user isoiso">ISOISO</a>
+
+                                <p class="message">PBR</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:56:20</time>
+                                <a class="toggle-link user ardoof">Ardoof</a>
+
+                                <p class="message">Lora ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                                    vel.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <time>23:57:15</time>
+                                <a class="toggle-link user isoiso">ISOISO</a>
+
+                                <p class="message">Where is PBR polaroid?</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div id="message-box">
+                        <form>
+                            <input type="text" id="user-message" maxlength="300" name="user-message"
+                                   placeholder="Your message..."/>
+                            <label for="checkbox">To all</label>
+                            <input type="checkbox" id="checkbox"/>
+                            <input type="submit" class="button" id="send" value="Send"/>
+                        </form>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer id="footer"></footer>
+</div>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/jquery-ui.js" type="text/javascript"></script>
+<script src="js/jquery.multiselect.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>

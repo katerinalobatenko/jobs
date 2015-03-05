@@ -1,0 +1,9 @@
+@media all
+and (min-width: 1366px)
+and (max-width: 1600px) {
+    body {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+

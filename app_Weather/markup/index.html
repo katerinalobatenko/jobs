@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Align elements</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.10.3.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<main id="main">
+<div class="sun-animate"></div>
+
+<section class="gallery-holder">
+    <div class="gallery">
+        <div class="cur-weather-wrap">
+            <div class="one">
+            <div class="refresh">
+                <time class="time-now">10:19</time>
+                <span class="icon icon-refresh"></span>
+            </div>
+            <div class="cur-city">
+                <h1 class="cur-city-name">Kharkiv</h1>
+                <time class="cur-city-date" datetime="Monday, November 3">Monday, November 3</time>
+            </div>
+            <div class="cur-weather-state clearfix">
+                <div class="cur-wh-icon icon icon-snow"></div>
+                <div class="cur-tempr-wrap">
+                    <span class="cur-tempr">-2°</span>
+
+                    <h2 class="cur-state">// mostly cloudy</h2>
+                </div>
+                <div class="cur-moon-state">
+                    <div class="cur-moon-ph icon icon-almost-old"></div>
+                    <time class="cur-moon-time">6:20</time>
+                </div>
+            </div>
+            </div>
+
+            <div class="two">
+            <ul class="day-weather">
+                <li class="day-wh-li">
+                    <span class="day-time">6:00</span>
+                    <span class="weather-icon icon icon-thunderstorm"></span>
+                    <span class="tempr-at-time">-2°</span>
+                </li>
+                <li class="day-wh-li">
+                    <span class="day-time">7:00</span>
+                    <span class="weather-icon icon icon-sleet-rain"></span>
+                    <span class="tempr-at-time">0°</span>
+                </li>
+                <li class="day-wh-li">
+                    <span class="day-time">8:00</span>
+                    <span class="weather-icon icon icon icon-cloudy"></span>
+                    <span class="tempr-at-time">-2°</span>
+                </li>
+                <li class="day-wh-li">
+                    <span class="day-time">9:00</span>
+                    <span class="weather-icon icon icon-sunny"></span>
+                    <span class="tempr-at-time">0°</span>
+                </li>
+                <li class="day-wh-li">
+                    <span class="day-time">6:00</span>
+                    <span class="weather-icon icon icon-snow"></span>
+                    <span class="tempr-at-time">-2°</span>
+                </li>
+            </ul>
+
+            <div class="slider range-wrap">
+                <span class="slider-handle range-wh"></span>
+            </div>
+
+            <ul class="day-weather-options">
+                <li class="day-wh-li">
+                    <span class="weather-icon icon icon-humidity"></span>
+                    <span class="numbers-data air-humidity-value">50%</span>
+                </li>
+                <li class="day-wh-li compass">
+                    <span class="weather-icon icon icon-wind-direction"></span>
+                    <span class="numbers-data compass-value">5<sup>m/c</sup></span>
+                </li>
+                <li class="day-wh-li">
+                    <span class="weather-icon icon icon icon-sunrise"></span>
+                    <span class="numbers-data sun-start-value">6:20</span>
+                </li>
+                <li class="day-wh-li">
+                    <span class="weather-icon icon icon icon-sunset"></span>
+                    <span class="numbers-data sun-end-value">16:20</span>
+                </li>
+            </ul>
+            </div>
+        </div>
+
+        <ul class="weather-week">
+            <li class="li-style mon today">
+                <span class="day">Today</span>
+                <span class="weather-icon icon-heavy-snow"></span>
+
+                <div class="weather-tempr-block">
+                    <span class="week-tempr low-tempr">-2°</span>
+                    <span class="tempr-panel"></span>
+                    <span class="week-tempr high-tempr">8°</span>
+                </div>
+            </li>
+            <li class="li-style tue">
+                <span class="day">Tue</span>
+                <span class="weather-icon icon-sleet-rain"></span>
+
+                <div class="weather-tempr-block">
+                    <span class="week-tempr low-tempr">2°</span>
+                    <span class="tempr-panel"></span>
+                    <span class="week-tempr high-tempr">12°</span>
+                </div>
+            </li>
+            <li class="li-style wed">
+                <span class="day">Wed</span>
+                <span class="weather-icon icon-sunny"></span>
+
+                <div class="weather-tempr-block">
+                    <span class="week-tempr low-tempr">-3°</span>
+                    <span class="tempr-panel"></span>
+                    <span class="week-tempr high-tempr">6°</span>
+                </div>
+
+            </li>
+            <li class="li-style thu">
+                <span class="day">Thu</span>
+                <span class="weather-icon icon-thunderstorm"></span>
+
+                <div class="weather-tempr-block">
+                    <span class="week-tempr low-tempr">-2°</span>
+                    <span class="tempr-panel"></span>
+                    <span class="week-tempr high-tempr">7°</span>
+                </div>
+
+            </li>
+            <li class="li-style fri">
+                <span class="day">Fri</span>
+                <span class="weather-icon icon-partly-cloudy"></span>
+
+                <div class="weather-tempr-block">
+                    <span class="week-tempr low-tempr">-4°</span>
+                    <span class="tempr-panel"></span>
+                    <span class="week-tempr high-tempr">5°</span>
+                </div>
+
+            </li>
+            <li class="li-style sat">
+                <span class="day">Sat</span>
+                <span class="weather-icon icon-dust"></span>
+
+                <div class="weather-tempr-block">
+                    <span class="week-tempr low-tempr">2°</span>
+                    <span class="tempr-panel"></span>
+                    <span class="week-tempr high-tempr">10°</span>
+                </div>
+
+            </li>
+            <li class="li-style sun">
+                <span class="day">Sun</span>
+                <span class="weather-icon icon-fog"></span>
+                <div class="weather-tempr-block">
+                    <span class="week-tempr low-tempr">-3°</span>
+                    <span class="tempr-panel"></span>
+                    <span class="week-tempr high-tempr">9°</span>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+
+    <ul class="paging">
+        <li class="active"><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+    </ul>
+</section>
+<span class="icon icon-menu menu-toggle-back"></span>
+<aside class="sidebar">
+    <div class="sidebar-wrap">
+        <form class="search-form" action="">
+            <span class="icon icon-add"></span>
+            <span class="icon icon-delete"></span>
+            <input type="search" name="search"/>
+        </form>
+        <ul class="cityes-weather">
+            <li class="li-style">
+                <span class="weather-icon icon-sunny"></span>
+                <span class="week-tempr">32°</span>
+                <ul class="city-weather-search">
+                    <li>
+                        <span class="city-name">Denpasar</span>
+                    </li>
+                    <li>
+                        <span class="city-weather">// mostly sunny</span>
+                    </li>
+                </ul>
+                <input type="checkbox" id="city1" name="c1" />
+                <label for="city1"></label>
+            </li>
+            <li class="cities li-style">
+
+                <span class="weather-icon icon-thunderstorm"></span>
+                <span class="week-tempr">29°</span>
+                <ul class="city-weather-search">
+                    <li>
+                        <span class="city-name">Male</span>
+                    </li>
+                    <li>
+                        <span class="city-weather">// thunderstorm</span>
+                    </li>
+                </ul>
+                <input type="checkbox" id="city2" name="c2" />
+                <label for="city2"></label>
+            </li>
+            <li class="cities li-style">
+
+                <span class="weather-icon icon-sleet-rain"></span>
+                <span class="week-tempr">35°</span>
+                <ul class="city-weather-search">
+                    <li>
+                        <span class="city-name">Thiruvananthapuram</span>
+                    </li>
+                    <li>
+                        <span class="city-weather">// rain</span>
+                    </li>
+                </ul>
+                <input type="checkbox" id="city3" name="c3" />
+                <label for="city3"></label>
+            </li>
+        </ul>
+    </div>
+    <div class="options-weather">
+        <div class="tempr-change clearfix">
+            <span class="celciy active">°C</span>
+            <span class="farenh">°F</span>
+            <span class="icon icon-settings"></span>
+        </div>
+        <ul class="weather-day-time">
+            <li>
+                <div class="range">
+                    <label for="days-opts">show weather for</label>
+                    <input type="text" id="days-opts" value="3 days" readonly>
+                </div>
+                <div class="slider">
+                    <div class="slider-range"></div>
+                    <span class="slider-handle"></span>
+                </div>
+            </li>
+            <li>
+                <div class="range">
+                    <label for="min-opts">update weather every</label>
+                    <input type="text" id="min-opts" value="15 min" readonly>
+                </div>
+                <div class="slider">
+                    <div class="slider-range"></div>
+                    <span class="slider-handle"></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</aside>
+</main>
+</body>
+</html>

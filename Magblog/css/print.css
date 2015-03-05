@@ -1,0 +1,112 @@
+@media print {
+
+	* { -webkit-print-color-adjust: exact; }
+
+	body {
+		font: 14px/20px "HelveticaLTStd Light", Helvetica, Arial, sans-serif;
+	}
+
+	#sidebar,
+	#footer,
+	.noprint {
+		display: none;
+	}
+
+	.logo:after {
+		display: inline-block;
+		width: 187px;
+		height: 64px;
+		overflow: hidden;
+		content: url("../images/sprite.png");
+	}
+
+	.article h1 {
+		margin-bottom: 7px;
+		padding: 0 10px;
+		font: 36px/47px "HelveticaLTStd Bold", Helvetica, sans-serif;
+	}
+
+	.article em {
+		position: static;
+		display: inline-block;
+		width: auto;
+		padding: 0 12px;
+	}
+
+	.article span {
+		color: #000 !important;
+		display: inline !important;
+		font: 20px/24px "HelveticaLTStd Bold", Helvetica, sans-serif !important;
+	}
+
+	.article p {
+		margin-bottom: 16px;
+		padding: 0 5px 0 11px;
+		color: #000;
+		font: 14px/20px "HelveticaLTStd Light", Helvetica, Arial, sans-serif;
+	}
+
+	.gallery-holder {
+		display: inline-block;
+		margin: 0 0 28px 7px;
+		padding: 12px 11px 10px 11px;
+		border: 1px solid #bfbfbf;
+		background: #fafafa;
+	}
+
+	.gallery-holder figure {
+		margin-bottom: 11px;
+		padding-left: 1px;
+	}
+
+	.gallery-holder img {
+		vertical-align: top;
+	}
+
+	.gallery {
+		overflow: hidden;
+	}
+
+	.gallery li {
+		float: left;
+		margin-right: 6px;
+		padding: 3px;
+		background: #fff;
+		border: 1px solid rgba(0, 0, 0, 0.5);
+	}
+
+	.gallery li:last-child {
+		margin-right: 0;
+	}
+
+	.comment-block h4 {
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	.comment-block a[href^=http]:after { content:" [" attr(href) "]"};
+
+	.comment-block a {
+		color: #000;
+		text-decoration: none;
+	}
+
+	.comment-item .box {
+		overflow: hidden;
+		margin-bottom: 0.5cm;
+	}
+
+	.comment-item .date {
+		float: right;
+		margin-right: 1cm;
+	}
+
+	.comment-item h3 {
+		color: #000;
+		font: 18px/20px "HelveticaLTStd Bold", Helvetica, sans-serif;
+	}
+
+	@page {
+		margin: 1cm;
+	}
+}
